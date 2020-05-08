@@ -6,14 +6,85 @@
 		<main class="main-page">
 			//= layout/_header.html
 
-			<div class="hero"></div>
+			<div class="hero">
+        <div class="container">
+          <div class="working-hours">
+            <i class="working-hours__icon"></i>
+            <p>с 11:00 до 23:00</p>
+          </div>
+          <div class="hero__row">
+            <div class="hero__content">
+              <div class="hero__descr">
+                <h1 class="headline hero__headline">Игровая валюта
+                  <span>по самым лучшим ценам</span>
+                </h1>
+                <p>Мы ценим каждого нашего клиента и за последние три года ни один из них не ушел от нас недовольным. Подтверждением томуслужат положительные отзывы наших клиентов.</p>
+              </div>
+              <a href="#" class="btn">Связатся с нами</a>
+            </div>
+            <ul class="benefit">
+              <li class="benefit-list">
+                <figure class="benefit-figure">
+                  <i class="benefit-icon">
+                    <picture>
+                      <source srcset="./img/icon-benefit-01.webp, ./img/icon-benefit-01@2x.webp 2x" width="50" height="50">
+                      <source type="image/webp" srcset="./img/icon-benefit-01.webp, ./img/icon-benefit-01@2x.webp 2x" width="50" height="50">
+                      <img src="./img/icon-benefit-01.png" srcset="./img/icon-benefit-01@2x.png 2x" alt="icon" width="50" height="50">
+                    </picture>
+                  </i>
+                  <strong class="benefit-title">Более 9 лет на рынке</strong>
+                  <figcaption><p>Более 10 000 удачных сделок </p></figcaption>
+                </figure>
+              </li>
+              <li class="benefit-list">
+                <figure class="benefit-figure">
+                  <i class="benefit-icon">
+                    <picture>
+                      <source srcset="./img/icon-benefit-02.webp, ./img/icon-benefit-02@2x.webp 2x" width="50" height="50">
+                      <source type="image/webp" srcset="./img/icon-benefit-02.webp, ./img/icon-benefit-02@2x.webp 2x" width="50" height="50">
+                      <img src="./img/icon-benefit-02.png" srcset="./img/icon-benefit-02@2x.png 2x" alt="icon" width="50" height="50">
+                    </picture>
+                  </i>
+                  <strong class="benefit-title">Лучшие цены на рынке</strong>
+                  <figcaption><p>Доступные цены для наших клиентов</p></figcaption>
+                </figure>
+              </li>
+              <li class="benefit-list">
+                <figure class="benefit-figure">
+                  <i class="benefit-icon">
+                    <picture>
+                      <source srcset="./img/icon-benefit-03.webp, ./img/icon-benefit-03@2x.webp 2x" width="50" height="50">
+                      <source type="image/webp" srcset="./img/icon-benefit-03.webp, ./img/icon-benefit-03@2x.webp 2x" width="50" height="50">
+                      <img src="./img/icon-benefit-03.png" srcset="./img/icon-benefit-03@2x.png 2x" alt="icon" width="50" height="50">
+                    </picture>
+                  </i>
+                  <strong class="benefit-title">Партнерская программа</strong>
+                  <figcaption><p>Всегда готовы сотрудничать с вами</p></figcaption>
+                </figure>
+              </li>
+              <li class="benefit-list">
+                <figure class="benefit-figure">
+                  <i class="benefit-icon">
+                    <picture>
+                      <source srcset="./img/icon-benefit-04.webp, ./img/icon-benefit-04@2x.webp 2x" width="50" height="50">
+                      <source type="image/webp" srcset="./img/icon-benefit-04.webp, ./img/icon-benefit-04@2x.webp 2x" width="50" height="50">
+                      <img src="./img/icon-benefit-04.png" srcset="./img/icon-benefit-04@2x.png 2x" alt="icon" width="50" height="50">
+                    </picture>
+                  </i>
+                  <strong class="benefit-title">Большой выбор</strong>
+                  <figcaption><p>Игровая валюта для большого количества игр</p></figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          
+          <a href="#" class="scroll-down"></a>
+        </div>   
+      </div>
+      <!-- /.hero -->
 
 			
-			<div class="back-to-top">
-				<svg viewBox="0 0 492.004 492.004">
-					<path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12 c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028 c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265 c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z"/>
-				</svg>
-			</div>
+
 			
 		</main>
 		//= layout/_footer.html
@@ -21,7 +92,6 @@
 	
 	<noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
 	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/libs/jquery.mCustomScrollbar.min.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>

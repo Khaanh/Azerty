@@ -2,22 +2,28 @@
 
 .form-holder {}
 
-.form-row {}
+.form-row {
+  &--search {
+    max-width: 434px;
+    // min-width: 434px;
+    width: 100%;
+  }
+}
 
 .form-col {}
 
 .form-control{
   font-family: $main-font;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   color: $txt-color;
   height: 50px;
-  background-color: $white;
+  background-color: $trans;
   border: 1px solid #E0E6ED;
   border-radius: 5px;
-  text-align: center;
-  padding: 14px 20px;
+  text-align: left;
+  padding: 10px 14px;
 
   display: inline-block;
   vertical-align: top;
@@ -27,8 +33,13 @@
   resize: none;
   margin: 0;
   @include transition;
+  &--search {
+    height: 40px;
+    border: 1px solid #ffffff;
+    padding: 10px 38px 10px 14px;
+  }
   &:focus {
-    border: 1px solid gold;
+    border: 1px solid $sweet;
   }
 }
 *::-webkit-input-placeholder {
@@ -48,3 +59,31 @@
   color: #c7c7c7; 
 }
 
+.form-search {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  border: none;
+  background-color: $trans;
+  @include hover() {
+    &:after {
+      opacity: 0.7;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(../img/icon-search.png) center / auto no-repeat;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}

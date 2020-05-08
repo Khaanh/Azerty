@@ -1,14 +1,35 @@
 <header class="header">
-	<div class="header-holder">
-		<nav class="nav">
+  <div class="container header__container">
+
+    <a href="#" class="logo">
+      <picture>
+        <source type="image/webp" srcset="./img/logo.webp, ./img/logo@2x.webp 2x">
+        <img src="./img/logo.png" srcset="./img/logo@2x.png 2x" alt="pic">
+      </picture>
+    </a>
+    <!-- /.logo -->
+
+    <nav class="nav">
       <ul>
-        <li><a href="#hero">Hero</a></li>
-        <li><a href="#scroll-tabs">Scroll & Tabs</a></li>
-        <li><a href="#default-slider">Default slider</a></li>
-        <li><a href="#modal">Modal</a></li>
-        <li><a href="#form-elements">Form elements</a></li>
-        <li><a href="">Others</a></li>
-      </ul>  
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог игр</a></li>
+        <li><a href="#">F.A.Q</a></li>
+        <li><a href="#">Гарантии</a></li>
+        <li><a href="#">Поставщикам</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
     </nav>
-	</div>
+    <!-- /.nav -->
+
+    <div class="header-widget">
+      <form action="#" class="form header-widget__form">
+        <div class="form-row form-row--search">
+          <input type="text" class="form-control form-control--search" placeholder="Введите названия игры">
+        </div>
+        <button class="form-search"></button>
+      </form>
+      <a href="#" class="profile"></a>
+    </div>
+    <!-- /.header-widget -->
+  </div>
 </header>
