@@ -140,6 +140,7 @@
 
 // Popular-games section
 .popular-games {
+  margin-top: -70px;
   padding: 100px 0 30px;
   text-align: center;
   background-image: url(../img/bg-popular.png);
@@ -190,7 +191,7 @@
 
 // Our feedback section
 .our-feedback {
-  background-image: url(../img/bg-feedback.jpg);
+  background-image: url(../img/bg-feedback.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -204,8 +205,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 0;
-    background: linear-gradient(90deg, rgba(41, 41, 44, 0.85) 0%, rgba(26, 42, 49, 0.19) 50%, rgba(41, 41, 44, 0.85) 100%), 
+    background: linear-gradient(90deg,rgba(40, 40, 42, 0.5) 0,rgba(55, 55, 88, 0.5) 50.02%,rgba(40, 40, 42, 0.7) 100%);
   }
   &__container {
     position: relative;
@@ -278,11 +278,6 @@
       background: url(../img/line.png) center / cover no-repeat;
     }
   }
-  &__date {
-    font-size: 14px;
-    line-height: 24px;
-    color: #b3b3b3;
-  }
   &__author {
     font-weight: 700;
     font-size: 18px;
@@ -291,6 +286,12 @@
     display: inline-block;
     margin-bottom: 4px;
   }
+}
+
+.date {
+  font-size: 14px;
+  line-height: 24px;
+  color: #b3b3b3;
 }
 
 .rating {
@@ -318,9 +319,128 @@
       }
     }
   }
-
+}
+// News-section
+.news-section {
+  background-image: url(../img/bg-news.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  &__subject {}
 }
 
+.news {
+  position: relative;
+  &__arrow {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(0, -50%);
+  }
+  &__list {
+    list-style: none;
+    // margin: 0 -15px;
+  }
+  &__items {
+    max-width: 785px;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.7);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 26px 30px 30px;
+    overflow: hidden;
+    min-height: 430px;
+    // margin: 0 15px;
+    margin: 0 auto;
+    @media only screen and (max-width: 1440px) {
+      max-width: 654px;
+      padding: 22px 22px 44px;
+    }
+  }
+  &__holder {
+    text-align: right;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+  &__pic {
+    flex: 0 0 187px;
+    margin-right: 30px;
+  }
+  &__info {}
+  &__heading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -14px;
+      width: 100%;
+      height: 1px;
+      background: url(../img/line.png) center / cover no-repeat;
+    }
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+  &__btn {
+    max-width: 203px;
+    padding: 8px 14px;
+    display: block;
+    margin-left: auto;
+  }
+  .appeal {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+}
+
+//About section
+.about-section {
+  background: linear-gradient(180deg, #182A2E 0%, rgba(29, 40, 56, 0.78) 35.19%, rgba(24, 24, 24, 0) 100%), linear-gradient(90deg, #161616 0%, #596278 50.02%, #161616 100%);
+  padding: 60px 0;
+  &__subject {
+    margin-bottom: 60px;
+  }
+  &__content {
+    padding: 40px 30px;
+    background: url(../img/bg-about.png) center / cover no-repeat;
+  }
+}
 
 
 
