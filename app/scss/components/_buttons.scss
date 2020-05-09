@@ -29,6 +29,17 @@
   &:focus {}
 }
 
+.btn-transp {
+  border: 2px solid #f8d650;
+  background: $trans;
+  padding: 15px 14px;
+  box-shadow: none;
+  @include hover() {
+    color: #f8d650;
+    border: 2px solid #fff;
+  }
+}
+
 button[disabled] {
   color: inherit;
   cursor: not-allowed;

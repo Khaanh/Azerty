@@ -5,6 +5,7 @@ $(function() {
 	//= include/popup
   //= include/forms
 	//= include/tabs
+  //= include/slider
 	
 });
 

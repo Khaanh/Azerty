@@ -47,6 +47,7 @@
 	font-weight: 700;
 	color: #fff;
 	text-align: center;
+	margin: 0 0 30px;
 }
 
 // Slick styles
@@ -55,24 +56,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: absolute;
 	@include transition;
 	&:hover {
-		background-color: $black;
-		> svg {
-			path {
-				fill: $white;
-			}
-		}
-	}
-	> svg {
-		transition: 0.3s ease-in-out;
 	}
 	&.next-arrow {
 		transform: rotate(180deg);
-		right: -40px;
+		right: -50px;
 	}
 	&.prev-arrow {
-    left: -40px;
+    left: -50px;
 	}
 }
 
