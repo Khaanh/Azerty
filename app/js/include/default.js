@@ -17,6 +17,6 @@ $(window).on('scroll', function() {
 // Scroll next section
 $('.js-scroll-next').click(function(e) {
   let next = $(this).closest('.hero').next('#popular').offset().top;
-  $('html, body').animate({scrollTop: next - 102}, 'slow');
+  $('html, body').animate({scrollTop: next}, 'slow');
   e.preventDefault();
 })

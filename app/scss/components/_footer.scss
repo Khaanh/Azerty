@@ -1,5 +1,140 @@
 .footer {
-  .container {
+  background-color: #202020;
+  padding: 68px 0 40px;
+  position: relative;
+}
+.footer-pic {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  @media only screen and (max-width: 1920px) {
 
   }
+}
+
+.footer-holder {
+  padding: 0 0 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-nav {
+  margin-right: 176px;
+  ul {
+    list-style: none;
+    li {
+      a {
+        font-size: 16px;
+        line-height: 30px;
+        text-decoration: none;
+        color: #fff;
+        padding-bottom: 8px;
+        text-align: left;
+        display: inline-block;
+        transition: all 0.3s ease;
+        @include hover() {
+          color: $sweet;
+        }
+      }
+    }
+  }
+}
+
+.summary {
+  max-width: 380px;
+  min-width: 380px;
+  width: 100%;
+  position: relative;
+}
+
+.summ-icon {
+  position: absolute;
+  left: 0;
+  top: -26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  font-style: normal;
+  border: 1px solid $sweet;
+  color: $sweet;
+  margin: 0 auto 2px 0;
+}
+
+.summ-desc {
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.summ-table {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: url(../img/line.png) center / cover no-repeat;
+    left: 0;
+    top: -6px;
+  }
+}
+
+.summ-row {
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  position: relative;
+  p {
+    margin: 0;
+    font-weight: 400;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: url(../img/line.png) center / cover no-repeat;
+    left: 0;
+    bottom: -6px;
+  }
+}
+
+.contact-us {
+  &__btn {
+    max-width: 210px;
+    min-width: 210px;
+    padding: 9px 12px;
+    margin-bottom: 32px;
+  }
+  .working-hours {
+    justify-content: flex-start;
+  }
+}
+
+.copyright {
+  text-align: center;
 }
