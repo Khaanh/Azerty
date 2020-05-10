@@ -8,9 +8,8 @@
   bottom: 0;
   left: 0;
   display: block;
-  @media only screen and (max-width: 1920px) {
-
-  }
+  pointer-events: none;
+  z-index: 3;
 }
 
 .footer-holder {
@@ -23,6 +22,10 @@
 .footer-logo {
   display: inline-block;
   text-decoration: none;
+  @media only screen and (max-width: 1920px) {
+    margin-left: 135px;
+    max-width: 174px;
+  }
 }
 
 .footer-main {
@@ -33,6 +36,9 @@
 
 .footer-nav {
   margin-right: 176px;
+  @media only screen and (max-width: 1440px) {
+    margin-right: 96px;
+  }
   ul {
     list-style: none;
     li {
@@ -41,10 +47,10 @@
         line-height: 30px;
         text-decoration: none;
         color: #fff;
-        padding-bottom: 8px;
+        padding-bottom: 4px;
         text-align: left;
-        display: inline-block;
-        transition: all 0.3s ease;
+        display: block;
+        transition: all 0.2s ease;
         @include hover() {
           color: $sweet;
         }
@@ -58,6 +64,9 @@
   min-width: 380px;
   width: 100%;
   position: relative;
+  @media only screen and (max-width: 1440px) {
+    min-width: 300px;
+  }
 }
 
 .summ-icon {

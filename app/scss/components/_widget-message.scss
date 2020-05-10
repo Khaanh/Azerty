@@ -1,0 +1,31 @@
+.widget-messeage {
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  background: linear-gradient(180deg, #e6be31 0%, #e68831 100%);
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(-90deg);
+  top: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+  &__holder {}
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: rgba(204, 112, 3, 0.5);
+    border-radius: 12px 0 0 0;
+    height: 73px;
+    width: 60px;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url(../img/icon-widget-message.png) center / auto no-repeat;
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

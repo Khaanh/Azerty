@@ -7,7 +7,7 @@
   width: 100%;
   z-index: 999;
   background-color: $trans;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   &__container {
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@
   }
   &.is-active {
     padding: 14px 0;
-    background-color: #000;
+    background-color: #202020;
   }
 }
 
@@ -39,6 +39,7 @@
         line-height: 20px;
         font-weight: 400;
         color: #fff;
+        display: block;
         padding: 5px 10px;
         text-decoration: none;
         transition: all 0.2s ease;

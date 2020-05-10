@@ -1,6 +1,6 @@
 $(window).on('scroll', function() {
   // Active header
-  if( $(this).scrollTop() > 150) {
+  if( $(this).scrollTop() > 75) {
     $('.header').addClass('is-active')
   } else {
     $('.header').removeClass('is-active')
