@@ -1,0 +1,126 @@
+// Faq page
+// Hero section
+.faq-page {
+  background-image: url(../img/bg-fifa.png);
+  background-position: top center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 152px 0 80px;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: linear-gradient(90deg, #282828 0%, #283153 50.52%, #282828 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__head-page {
+    margin-bottom: 106px;
+  }
+}
+
+.faq-block {
+  max-width: 1470px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.faq-list {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.faq-items {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-title {
+  background-color: #1f1f1f;
+  font-weight: 700;
+  font-size: 30px;
+  display: block;
+  text-align: left;
+  padding-bottom: 14px;
+  padding: 14px 48px;
+}
+
+.faq-holder {
+  background-color: #353535;
+  padding: 14px 48px;
+}
+
+
+  // Accordion
+.acc {
+
+}
+
+.acc-holder {
+}
+
+.acc-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  cursor: pointer;
+  &.is-active {
+  }
+}
+
+.acc-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 18px;
+  transform: rotate(0);
+  transform-origin: center;
+  @include transition;
+  &:after {
+    content: '';
+    display: block;
+    background: url(../img/icon-acc.svg) center / auto no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  &.is-rotated {
+    transform: rotate(180deg);
+  }
+}
+
+.acc-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $sweet;
+  width: 100%;
+  transition: all 0.2s ease;
+  @include hover() {
+    color: #fff;
+  }
+  &.title-active {
+  }
+}
+
+.acc-body {
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  margin: 0 auto;
+  padding: 20px 4px 4px 34px;
+  display: none;
+}
+
+.acc-content {
+  font-size: 16px;
+  font-weight: 400;
+}
