@@ -18,6 +18,10 @@
     line-height: 24px;
     color: #828282;
     position: relative;
+    transition: all 0.2s ease;
+    @include hover() {
+      color: #fff;
+    }
     &:after {
       content: '/';
       display: block;
