@@ -77,17 +77,26 @@
   flex-wrap: wrap;
   margin: 0 -15px;
   list-style: none;
+  &--warranty {
+    justify-content: flex-start;
+  }
 }
 
 .benefit-list {
   margin: 0 15px 30px;
   max-width: 343px;
   width: 100%;
+  border: 1px solid $sweet;
+  border-radius: 15px;
+  overflow: hidden;
+  &--warranty {
+    min-height: 324px;
+    max-width: calc(25% - 30px);
+    background: linear-gradient(180deg, rgba(247, 222, 135, 0) 0%, rgba(247, 222, 135, 0.09) 63.9%, rgba(247, 222, 135, 0.18) 100%);
+  }
 }
 
 .benefit-figure {
-  border: 1px solid $sweet;
-  border-radius: 15px;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
@@ -98,18 +107,48 @@
     width: 100%;
     margin: 0 auto;
   }
+  &--warranty {
+    figcaption {
+      max-width: 100%;
+      p {
+        font-weight: 700;
+      }
+    }
+  }
 }
 
 .benefit-icon {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  &--warranty {
+    margin-bottom: 30px;
+  }
 }
 
 .benefit-title {
   font-weight: 700;
-  display: inline-block;
+  display: block;
+  font-size: 16px;
+  line-height: 28px;
   margin-bottom: 5px;
+  position: relative;
+  &--warranty {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 32px;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: -10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: linear-gradient(270deg, rgba(54, 54, 54, 0) 0%, rgba(248, 214, 80, 0.2) 50.06%, rgba(54, 54, 54, 0) 100%);
+    }
+  }
 }
 
 .scroll-down {

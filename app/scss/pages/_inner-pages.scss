@@ -1,11 +1,9 @@
-// Faq page
-// Hero section
-.faq-page {
+.inner-pages {
   background-image: url(../img/bg-fifa.png);
   background-position: top center;
   background-size: auto;
   background-repeat: no-repeat;
-  padding: 152px 0 80px;
+  padding: 194px 0 80px;
   position: relative;
   &:after {
     content: '';
@@ -18,6 +16,9 @@
     left: 0;
     z-index: -1;
   }
+}
+// Faq page
+.faq-page {
   &__head-page {
     margin-bottom: 106px;
   }
@@ -58,14 +59,10 @@
   padding: 14px 48px;
 }
 
-
   // Accordion
-.acc {
+.acc {}
 
-}
-
-.acc-holder {
-}
+.acc-holder {}
 
 .acc-header {
   display: flex;
@@ -124,3 +121,13 @@
   font-size: 16px;
   font-weight: 400;
 }
+
+// Warranty-page
+.warranty-page {
+}
+
+.warranty-text {
+  margin-bottom: 66px;
+}
+
+// Provider-page
