@@ -131,3 +131,106 @@
 }
 
 // Provider-page
+
+.contacts-page {
+  &__head-page {
+    margin-bottom: 60px;
+  }
+  &__holder {
+    background: linear-gradient(90deg, #28282A 0%, #373758 50.02%, #28282A 100%);
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.contacts-block {
+  max-width: 715px;
+  width: 100%;
+  text-align: left;
+  &__list {
+    background: url(../img/contact-block-pic.jpg) center / cover no-repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    position: relative;
+    padding: 30px 74px;
+    list-style: none;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: linear-gradient(0deg, rgba(53, 53, 53, 0.95), rgba(53, 53, 53, 0.95));
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+  &__items {
+    margin-bottom: 30px;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url(../img/line.png) center / cover no-repeat;
+      width: 100%;
+      height: 1px;
+      bottom: -15px;
+      left: 0;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: url(../img/icon-vk.png);
+      background-position: center;
+      background-size: auto;
+      background-repeat: no-repeat;
+      height: 24px;
+      width: 24px;
+      top: 0;
+      left: -48px;
+    }
+    &.icon-skype {
+      &:before {
+        background-image: url(../img/icon-skype.png);
+      }
+    }
+    &.icon-online {
+      &:before {
+        background-image: url(../img/icon-online.png);
+      }
+    }
+    &.icon-phone {
+      &:before {
+        background-image: url(../img/icon-phone.png);
+      }
+    }
+    &.icon-mail {
+      &:before {
+        background-image: url(../img/icon-mail.png);
+      }
+    }
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    display: block;
+    transition: all 0.2s ease;
+    @include hover() {
+      color: $sweet;
+    }
+  }
+}
