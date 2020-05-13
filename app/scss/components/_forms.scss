@@ -5,7 +5,6 @@
 .form-row {
   &--search {
     max-width: 434px;
-    // min-width: 434px;
     width: 100%;
   }
 }
@@ -19,9 +18,9 @@
   font-weight: 400;
   color: $txt-color;
   height: 50px;
-  background-color: $trans;
-  border: 1px solid #E0E6ED;
-  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
   text-align: left;
   padding: 10px 14px;
 
@@ -35,7 +34,7 @@
   @include transition;
   &--search {
     height: 40px;
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
     padding: 10px 38px 10px 14px;
   }
   &:focus {
@@ -44,19 +43,19 @@
 }
 *::-webkit-input-placeholder {
   opacity: 1;
-  color: #c7c7c7; 
+  color: #bbb;; 
 }
 *:-moz-placeholder {
   opacity: 1;
-  color: #c7c7c7; 
+  color: #bbb;; 
 }
 *::-moz-placeholder {
   opacity: 1;
-  color: #c7c7c7; 
+  color: #bbb;; 
 }
 *:-ms-input-placeholder {
   opacity: 1;
-  color: #c7c7c7; 
+  color: #bbb;; 
 }
 
 .form-search {
@@ -85,5 +84,63 @@
     left: 0;
     opacity: 1;
     transition: all 0.3s ease;
+  }
+}
+
+// Form dark
+.form-dark {
+  &__holder {
+    background-color: #353535;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+  }
+  &__grp {
+  }
+  &__row {
+    margin-bottom: 30px;
+  }
+  &__control {
+    height: 58px;
+    padding: 14px;
+    &--area {
+      height: 154px;
+      padding: 14px;
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.attention {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: $sweet;
+    margin-right: 16px;
+    height: 44px;
+    width: 44px;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url(../img/icon-triangle.svg) center / auto no-repeat;
+      height: 100%;
+      width: 100%;
+      top: -5px;
+      left: 0;
+    }
   }
 }
