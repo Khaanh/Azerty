@@ -77,6 +77,11 @@
 	  bottom: -60px;
 	  left: 0;
 	}
+	&--no-line {
+		&:after {
+			display: none;
+		}
+	}
 }
 
 .lead {

@@ -1,10 +1,13 @@
 .inner-pages {
   background-image: url(../img/bg-fifa.png);
   background-position: top center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 194px 0 80px;
   position: relative;
+  @media only screen and (max-width: 1440px) {
+    background-size: auto;
+  }
   &:after {
     content: '';
     display: block;
@@ -134,11 +137,38 @@
 
 .contacts-page {
   &__head-page {
-    margin-bottom: 60px;
+    margin-bottom: 160px;
   }
   &__holder {
     background: linear-gradient(90deg, #28282A 0%, #373758 50.02%, #28282A 100%);
     box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.05);
+    padding-top: 60px;
+    position: relative;
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -48px;
+    }
+    &:after {
+      max-width: 450px; 
+      width: 100%;
+      height: 60px;
+      transform: skew(70deg);
+      left: -75px;
+      background: linear-gradient(20deg,#28282a 0,#373758 106.02%,#28282a 100%);
+    }
+    &:before {
+      max-width: 450px; 
+      width: 100%;
+      height: 60px;
+      transform: skew(-70deg);
+      right: -75px;
+      background: linear-gradient(-20deg,#28282a 0,#373758 113.02%,#28282a 100%);
+    }
+  }
+  &__container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
