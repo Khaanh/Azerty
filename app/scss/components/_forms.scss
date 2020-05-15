@@ -147,8 +147,85 @@
 
 // Form registr / Registration-page
 .form-registr {
-  &__grp {}
-  &__row {}
-  &__control {}
-  &__col {}
+  background-color: rgba(50, 50, 50, 0.7);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  &__grp {
+    margin-bottom: 40px;
+    &--sign-in {
+      margin-bottom: 15px;
+    }
+  }
+  &__row {
+    margin-bottom: 20px;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.icon-email,
+    &.icon-pass {
+      &:after {
+        content: '';
+        position: absolute;
+        background: url(../img/icon-email.png) center / auto no-repeat;
+        width: 22px;
+        height: 22px;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &.icon-pass {
+      &:after {
+        background: url(../img/icon-lock.png) center / auto no-repeat;
+      }
+    }
+  }
+  &__control {
+    padding: 10px 52px;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__agreement {
+    margin: 30px 0;
+  }
+  &__btn {
+    max-width: 308px;
+  }
+}
+
+.recap {
+  width: 363px;
+  height: 123px;
+  border: none;
+  padding: 0;
+}
+
+.show-pass {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 100%;
+  width: 32px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  @include hover() {
+    opacity: 0.6;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background: url(../img/icon-pass.png) center / cover no-repeat;
+    height: 22px;
+    width: 22px;
+  }
 }

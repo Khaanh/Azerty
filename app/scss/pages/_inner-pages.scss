@@ -20,7 +20,12 @@
     z-index: -1;
   }
   &.bg-one {
-    background-image: url(../img/bg-one.png);
+    background-image: url(../img/bg-one.jpg);
+    &:after {
+      content: '';
+      position: absolute;
+      background: linear-gradient(90deg, #28282A 0%, #373758 50.02%, #28282A 100%);
+    }
   }
 }
 // Faq page

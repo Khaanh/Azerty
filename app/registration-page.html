@@ -10,7 +10,7 @@
       <div class="inner-pages bg-one">
         <section class="registration-page">
           <div class="container">
-            <div class="head-page">
+            <div class="head-page head-page--horizont">
               <div class="breadcrumbs">
                 <ul class="breadcrumbs__list">
                   <li class="breadcrumbs__items">
@@ -28,13 +28,13 @@
             <div class="registr-block">
               <div class="registr-block__col">
                 <div class="sign-in">
-                  <strong class="subject">Войти</strong>
+                  <strong class="subject subject--left">Войти</strong>
                   <form action="#" class="form-registr">
-                    <div class="form-registr__grp">
-                      <div class="form-registr__row">
+                    <div class="form-registr__grp form-registr__grp--sign-in">
+                      <div class="form-registr__row icon-email">
                         <input type="email" class="form-control form-registr__control" placeholder="Введите вашу эл.почту">
                       </div>
-                      <div class="form-registr__row">
+                      <div class="form-registr__row icon-pass">
                         <input type="password" class="form-control form-registr__control" placeholder="Введите пароль">
                         <button type="button" class="show-pass"></button>
                       </div>
@@ -49,17 +49,17 @@
               </div>
               <div class="registr-block__col">
                 <div class="create-acc">
-                  <strong class="subject">Создать аккаунт</strong>
+                  <strong class="subject subject--left">Создать аккаунт</strong>
                   <form action="#" class="form-registr">
                     <div class="form-registr__grp">
-                      <div class="form-registr__row">
+                      <div class="form-registr__row icon-email">
                         <input type="email" class="form-control form-registr__control" placeholder="Введите вашу эл.почту">
                       </div>
-                      <div class="form-registr__row">
+                      <div class="form-registr__row icon-pass">
                         <input type="password" class="form-control form-registr__control" placeholder="Введите пароль">
                         <button type="button" class="show-pass"></button>
                       </div>
-                      <div class="form-registr__row">
+                      <div class="form-registr__row icon-pass">
                         <input type="password" class="form-control form-registr__control" placeholder="Повторите пароль">
                         <button type="button" class="show-pass"></button>
                       </div>
@@ -69,24 +69,24 @@
                       <button class="recap">
                         <img src="./img/recaptcha-pic.png" alt="pic" width="363" height="123">
                       </button>
-                      <label class="checkbox">
-                        <input type="checkbox" class="visually-hidden">
-                        <span class="checkmark"></span>
-                        <p>Я прочитал и согласен с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой конфиденциальности</a>, а также даю согласие на обработку персональных данных.</p>
-                      </label>
-                      <label class="checkbox">
-                        <input type="checkbox" class="visually-hidden">
-                        <span class="checkmark"></span>
-                        <p>Да, я хотел бы получать эксклюзивные предложения и информацию о продуктах и услугах, которые могут быть мне интересны, по электронной почте. Клиенты могут в любое время отказаться от подписки частично или полностью.</p>
-                      </label>
-                      <button class="btn">Зарегистрироваться</button>
+                      <div class="form-registr__agreement">
+                        <label class="checkbox">
+                          <input type="checkbox" class="visually-hidden">
+                          <span class="checkmark"></span>
+                          <p>Я прочитал и согласен с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой конфиденциальности</a>, а также даю согласие на обработку персональных данных.</p>
+                        </label>
+                        <label class="checkbox">
+                          <input type="checkbox" class="visually-hidden">
+                          <span class="checkmark"></span>
+                          <p>Да, я хотел бы получать эксклюзивные предложения и информацию о продуктах и услугах, которые могут быть мне интересны, по электронной почте. Клиенты могут в любое время отказаться от подписки частично или полностью.</p>
+                        </label>
+                      </div>
+                      <button class="btn form-registr__btn">Зарегистрироваться</button>
                     </div>
                   </form>
                 </div>
               </div>
             </div>
-
-              
           </div> 
         </section>
         <!-- /.registration-page -->
