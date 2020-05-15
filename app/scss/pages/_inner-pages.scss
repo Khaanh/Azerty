@@ -19,6 +19,9 @@
     left: 0;
     z-index: -1;
   }
+  &.bg-one {
+    background-image: url(../img/bg-one.png);
+  }
 }
 // Faq page
 .faq-page {

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  //= layout/_head.html
+<body>
+  <div class="wrapper">
+    <main class="main-page">
+      //= layout/_header.html
+      //= layout/_widget-message.html
+
+      <div class="inner-pages bg-one">
+        <section class="registration-page">
+          <div class="container">
+            <div class="head-page">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__items">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__items">
+                    <span class="breadcrumbs__current">Войти</span>
+                  </li>
+                </ul>
+              </div>
+              <h2 class="headline">Вход / регистрация</h2>
+            </div>
+            <!-- /.head-page -->
+            
+            <div class="registr-block">
+              <div class="registr-block__col">
+                <div class="sign-in">
+                  <strong class="subject">Войти</strong>
+                  <form action="#" class="form-registr">
+                    <div class="form-registr__grp">
+                      <div class="form-registr__row">
+                        <input type="email" class="form-control form-registr__control" placeholder="Введите вашу эл.почту">
+                      </div>
+                      <div class="form-registr__row">
+                        <input type="password" class="form-control form-registr__control" placeholder="Введите пароль">
+                        <button type="button" class="show-pass"></button>
+                      </div>
+                    </div>
+                    <div class="form-registr__col">
+                      <a href="#" class="forgot-link">Забыли пароль?</a>
+                      <button class="btn">Войти на сайт</button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+              <div class="registr-block__col">
+                <div class="create-acc">
+                  <strong class="subject">Создать аккаунт</strong>
+                  <form action="#" class="form-registr">
+                    <div class="form-registr__grp">
+                      <div class="form-registr__row">
+                        <input type="email" class="form-control form-registr__control" placeholder="Введите вашу эл.почту">
+                      </div>
+                      <div class="form-registr__row">
+                        <input type="password" class="form-control form-registr__control" placeholder="Введите пароль">
+                        <button type="button" class="show-pass"></button>
+                      </div>
+                      <div class="form-registr__row">
+                        <input type="password" class="form-control form-registr__control" placeholder="Повторите пароль">
+                        <button type="button" class="show-pass"></button>
+                      </div>
+                    </div>
+                    <div class="form-registr__col">
+                      <p>Введите символы указанные на картинке</p>
+                      <button class="recap">
+                        <img src="./img/recaptcha-pic.png" alt="pic" width="363" height="123">
+                      </button>
+                      <label class="checkbox">
+                        <input type="checkbox" class="visually-hidden">
+                        <span class="checkmark"></span>
+                        <p>Я прочитал и согласен с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой конфиденциальности</a>, а также даю согласие на обработку персональных данных.</p>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" class="visually-hidden">
+                        <span class="checkmark"></span>
+                        <p>Да, я хотел бы получать эксклюзивные предложения и информацию о продуктах и услугах, которые могут быть мне интересны, по электронной почте. Клиенты могут в любое время отказаться от подписки частично или полностью.</p>
+                      </label>
+                      <button class="btn">Зарегистрироваться</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+              
+          </div> 
+        </section>
+        <!-- /.registration-page -->
+      </div>
+      
+    </main>
+    //= layout/_footer.html
+  </div>
+  
+  <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/slick.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
