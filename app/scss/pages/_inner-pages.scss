@@ -17,7 +17,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -100;
   }
   &.bg-one {
     background-image: url(../img/bg-one.jpg);
@@ -26,6 +26,9 @@
       position: absolute;
       background: linear-gradient(90deg, #28282A 0%, #373758 50.02%, #28282A 100%);
     }
+  }
+  &.personal-bg {
+    background-image: url(../img/bg-privat.jpg);
   }
 }
 // Faq page
