@@ -228,4 +228,20 @@
     height: 22px;
     width: 22px;
   }
+  &:before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 1px;
+    transform: rotate(45deg);
+    top: 12px;
+    left: 16px;
+    background-color: #fff;
+    opacity: 0;
+  }
+  &.is-show {
+    &:before {
+      opacity: 1;      
+    }
+  }
 }
