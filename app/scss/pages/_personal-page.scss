@@ -56,3 +56,156 @@
     background: linear-gradient(-24deg,#28282a 0,#373758 145.02%,#28282a 100%);
   }
 }
+
+.history-table {
+  margin-bottom: 60px;
+  > strong {
+    display: inline-block;
+    padding-left: 24px;
+  }
+  &__layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 45px 46px 15px;
+    margin-bottom: 45px;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50.06%, rgba(255, 255, 255, 0) 100%);
+      height: 1px;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 86px;
+    }
+    &--column {
+      flex-direction: column;
+
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+    &:after {
+      content: '';
+      position: absolute;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50.06%, rgba(255, 255, 255, 0) 100%);
+      height: 1px;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+    }
+  }
+  &__col {
+    color: #fff;
+    text-align: center;
+    max-width: 15%;
+    width: 100%;
+    padding: 0 8px;
+    p {
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+    strong {
+      font-size: 16px;
+      font-weight: 700;
+      display: block;
+    }
+    a {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-block;
+      @include hover() {
+        color: $sweet;
+      }
+    }
+    .details-link {
+      font-size: 16px;
+      font-weight: 700;
+      color: $sweet;
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      @include hover() {
+        &:after {
+          transform: scale(0);
+        }
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $sweet;
+        left: 0;
+        bottom: 0;
+        transform: scale(1);
+        transition: all 0.2s ease;
+      }
+    }
+    &--left {
+      text-align: left;
+    }
+    &--right {
+      text-align: right;
+    }
+    &--lg {
+      max-width: 25%;
+    }
+  }
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  &__inner {
+    text-align: left;
+    max-width: 50%;
+    width: 100%;
+    &:first-child {
+      max-width: 560px;
+    }
+    p {
+      font-weight: 700;
+    }
+  }
+}
+
+.status {
+  color: #2ab938;
+}
+
+// .details-link {
+//   font-size: 16px;
+//   font-weight: 700;
+//   color: $sweet;
+//   text-decoration: none;
+//   display: inline-block;
+//   position: relative;
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     height: 1px;
+//     background-color: $sweet;
+//     left: 0;
+//     bottom: 0;
+//   }
+// }
