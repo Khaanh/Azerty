@@ -143,6 +143,11 @@
       left: 0;
     }
   }
+  &--bold {
+    p {
+      font-weight: 700;
+    }
+  }
 }
 
 // Form registr / Registration-page
@@ -242,6 +247,72 @@
   &.is-show {
     &:before {
       opacity: 1;      
+    }
+  }
+}
+
+// Form profile
+.form-profile {
+  &__fieldset {}
+  &__holder {}
+  &__layout {
+    margin: 0 -15px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__col {
+    max-width: 50%;
+    width: 100%;
+    padding: 0 15px;
+    .form-profile__lb {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__lb {
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+    strong {
+      display: inline-block;
+      font-weight: 700;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+    small {
+      display: inline-block;
+      color: $sweet;
+      }
+  }
+  &__row {}
+  &__control {
+    height: 60px;
+  }
+  &__grp {
+
+  }
+  &__btn {
+    max-width: 308px;
+    margin-bottom: 30px;
+  }
+}
+
+.email-user {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 30px;
+  a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    @include hover() {
+      color: $sweet;
     }
   }
 }

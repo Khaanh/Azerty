@@ -19,6 +19,9 @@
     left: 0;
     z-index: -100;
   }
+  &--pb {
+    padding-bottom: 0;
+  }
   &.bg-one {
     background-image: url(../img/bg-one.jpg);
     &:after {

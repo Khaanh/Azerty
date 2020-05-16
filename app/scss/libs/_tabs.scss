@@ -1,5 +1,4 @@
 .tabs-section {
-  max-width: 80%;
   width: 100%;
   margin: 0 auto;
   min-width: 260px;
@@ -31,45 +30,25 @@
   @include hover() {
     color: $sweet;
   }
-  &.active {
+  &.is-active {
     color: $sweet;
   }
 }
 
 .holder-content {
-  margin-top: 0px;
+  max-width: 1540px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   opacity: 1;
-  padding: 40px 60px;
-  overflow: hidden;
+  padding: 40px 55px 120px;
   transition: all 1s ease;
   .tabcontent {
     display: none;
     min-height: 180px;
-    &.active {
+    &.is-display {
       transition: all 1s ease;
       display: block;
-    }
-    h3 {
-      font-size: 40px;
-      top: 75px;
-      transform: rotate(90deg);
-      position: absolute;
-      left: -90px;
-      opacity: 0.1;
-      width: 200px;
-      height: 60px;
-      padding: 0;
-    }
-    p {
-      color: $text;
-      margin: 0;
-      padding: 0;
-      line-height: 28px;
-      font-weight: 100;
-      transition: all 1s ease;
-      width: 100%;
-      font-size: 16px;
     }
   }
 }

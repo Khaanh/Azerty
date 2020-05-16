@@ -1,7 +1,7 @@
-$('.tabslink').on('click', function(e) {
+$('.js-tabsLink').on('click', function(e) {
   let id = $(this).attr('href')
-  $(this).closest('.tabs').siblings('.holder-content').find('.tabcontent').removeClass('active')
-  $(this).addClass('active').siblings('.tabslink').removeClass('active')
-  $('#' + id).addClass('active')
+  $(this).closest('.tabs').siblings('.personal-inner').find('.holder-content').find('.tabcontent').removeClass('is-display')
+  $(this).addClass('is-active').siblings('.js-tabsLink').removeClass('is-active')
+  $('#' + id).addClass('is-display')
   e.preventDefault();
 })

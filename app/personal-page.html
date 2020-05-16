@@ -7,7 +7,7 @@
       //= layout/_header.html
       //= layout/_widget-message.html
 
-      <div class="inner-pages personal-bg">
+      <div class="inner-pages inner-pages--pb personal-bg">
         <section class="personal-page">
           <div class="container">
             <div class="head-page head-page--horizont">
@@ -30,44 +30,102 @@
           </div>
 
           <div class="personal-main">
-            <div class="container personal-main__container">
-              <div class="tabs-section">
-                <div class="tabs">
-                  <a href="a1" class="tabslink active">
-                    <p>Мой профиль</p>
-                  </a>
-                  <a href="a2" class="tabslink">
-                    <p>История заказов</p>
-                  </a>
-                  <a href="a3" class="tabslink">
-                    <p>Партнерская программа</p>
-                  </a>
-                  <a href="a4" class="tabslink">
-                    <p>Мой статус</p>
-                  </a>
-                  <a href="a4" class="tabslink">
-                    <p>Инструкция по оплате</p>
-                  </a>
-                </div>
+            <div class="tabs-section">
+              <div class="tabs">
+                <a href="a1" class="tabslink js-tabsLink is-active">
+                  <p>Мой профиль</p>
+                </a>
+                <a href="a2" class="tabslink js-tabsLink">
+                  <p>История заказов</p>
+                </a>
+                <a href="a3" class="tabslink js-tabsLink">
+                  <p>Партнерская программа</p>
+                </a>
+                <a href="a4" class="tabslink js-tabsLink">
+                  <p>Мой статус</p>
+                </a>
+                <a href="a5" class="tabslink js-tabsLink">
+                  <p>Инструкция по оплате</p>
+                </a>
+              </div>
+              <!-- /.tabs -->
+              <div class="personal-inner">
                 <div class="holder-content">
-                  <div class="tabcontent active" id="a1">
-                    <p>London is the capital of Great Britain. It is one of the greatest cities in the world. It is an important business and financial centre. It is an intellectual centre, too. Everywhere in London, there are open spaces: Hyde Park and Regent Park are the largest. The City is the oldest part of London.  London is the capital of Great Britain. It is one of the greatest cities in the world. It is an important business and financial centre. It is an intellectual centre, too. Everywhere in London, there are open spaces: Hyde Park and Regent Park are the largest. The City is the oldest part of London. </p>
+                  <div class="tabcontent is-display" id="a1">
+                    <form action="#" class="form-profile">
+                      <fieldset class="form-profile__fieldset">
+                        <legend class="subject subject--left">Информация о пользователе</legend>
+                        <strong class="email-user">Электронная почта: <a href="#">user@gmail.com</a></strong>
+                        <div class="form-profile__holder">
+                          <div class="form-profile__layout">
+                            <div class="form-profile__col">
+                              <label class="form-profile__lb">
+                                <strong>Телефон:</strong>
+                                <div class="form-profile__row">
+                                  <input type="tel" class="form-control form-profile__control js-validateTel">
+                                </div>
+                              </label>
+                              <label class="form-profile__lb">
+                                <strong>Skype:</strong>
+                                <div class="form-profile__row">
+                                  <input type="text" class="form-control form-profile__control">
+                                </div>
+                              </label>
+                              <label class="form-profile__lb">
+                                <strong>ICQ:</strong>
+                                <div class="form-profile__row">
+                                  <input type="text" class="form-control form-profile__control">
+                                </div>
+                              </label>
+                            </div>
+                            <div class="form-profile__col">
+                              <label class="form-profile__lb">
+                                <strong>Новый пароль:</strong>
+                                <div class="form-profile__row">
+                                  <input type="password" autocomplete="on" class="form-control form-profile__control">
+                                </div>
+                                <small>Пароль должен содержать не менее 5 и не более 20 символов</small>
+                              </label>
+                              <label class="form-profile__lb">
+                                <strong>Повторите новый пароль:</strong>
+                                <div class="form-profile__row">
+                                  <input type="password" autocomplete="on" class="form-control form-profile__control">
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form-profile__grp">
+                            <button type="button" class="btn form-profile__btn">Сохранить изменения</button>
+                            <div class="attention attention--bold">
+                              <i class="attention__icon">!</i>
+                              <p>Внимание! Мы выполняем заказы с 11:00 до 23:00 (Москва, GMT+3, UTC+3)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
                   </div>
+                  <!-- // -->
                   <div class="tabcontent" id="a2">
                     <p>Paris is in the Paris department of the Paris-Isle-of-France region The French historic, political and economic capital, with a population of only 2.5 million is located in the northern part of France. One of the most beautiful cities in the world. Home to historical monuments such as Notre Dame, the Eiffel tower (320m), Bastille, Louvre and many more. </p>
                   </div>
+                  <!-- // -->
                   <div class="tabcontent" id="a3">
                     <p>Barcelona has been an urban laboratory since the high Medieval Ages. A place of diversity, a backdrop for a multiplicity of social and cultural processes on multiple scales that reflect different ways of constructing the future, a city with a long experience of urban life and social innovations. Barcelona has been an urban laboratory since the high Medieval Ages. A place of diversity, a backdrop for a multiplicity of social and cultural processes on multiple scales that reflect different ways of constructing the future, a city with a long experience of urban life and social innovations. Barcelona has been an urban laboratory since the high Medieval Ages. A place of diversity, a backdrop for a multiplicity of social and cultural processes on multiple scales that reflect different ways of constructing the future, a city with a long experience of urban life and social innovations.   </p>
                   </div>
+                  <!-- // -->
                   <div class="tabcontent" id="a4">
                     <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. </p>
                   </div>
+                  <!-- // -->
                   <div class="tabcontent" id="a5">
                     <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. </p>
                   </div>
                 </div>
+                <!-- /.holder-content -->
               </div>
             </div>
+            <!-- /.tabs-section -->
           </div>
         </section>
         <!-- /.personal-page -->
@@ -80,6 +138,7 @@
   <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
   <script src="js/libs/jquery.min.js"></script>
   <script src="js/libs/slick.min.js"></script>
+  <script src="js/libs/jquery.mask.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 </html>
