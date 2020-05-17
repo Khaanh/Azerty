@@ -19,7 +19,6 @@
   color: $txt-color;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   text-align: left;
   padding: 10px 14px;
@@ -27,7 +26,7 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   outline: none;
   resize: none;
   margin: 0;
@@ -144,6 +143,7 @@
     }
   }
   &--bold {
+    padding: 0 55px 120px;
     p {
       font-weight: 700;
     }
@@ -290,12 +290,8 @@
   &__control {
     height: 60px;
   }
-  &__grp {
-
-  }
   &__btn {
     max-width: 308px;
-    margin-bottom: 30px;
   }
 }
 

@@ -1,5 +1,6 @@
 @mixin font($fontname, $filename, $fontweight, $fontstyle) {
   @font-face {
+    font-display: swap;
     font-family: $fontname;
     src: url(#{'../fonts/'+$filename+'.eot'});
     src:
@@ -10,5 +11,3 @@
     font-style: $fontstyle;
   }
 }
-
-@include font(Gilroy-Semibold,Gilroy-Semibold, 600, normal);

@@ -89,14 +89,13 @@
 .holder-content {
   max-width: 1540px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   position: relative;
   opacity: 1;
-  padding: 40px 55px 120px;
+  padding: 40px 55px 0;
   transition: all 1s ease;
   .tabcontent {
     display: none;
-    min-height: 180px;
     &.is-display {
       transition: all 1s ease;
       display: block;
