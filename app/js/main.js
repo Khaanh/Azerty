@@ -6,6 +6,7 @@ $(function() {
   //= include/forms
 	//= include/tabs
   //= include/slider
+  //= include/select
 	
 });
 

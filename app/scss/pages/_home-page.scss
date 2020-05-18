@@ -226,13 +226,64 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1);
+  position: relative;
   transform-origin: center;
   transition: all 0.3s ease;
   @include hover() {
     transform: scale(1.1);
   }
+  &--catalog {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0;
+      transform-origin: center;
+      transition: all 0.2s ease;
+    }
+    @include hover() {
+      transform: scale(1);
+      .pop-games-descr {
+        transform: translateY(0);
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
 }
 
+.pop-games-descr {
+  background-color: $sweet;
+  padding: 15px 32px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #363636;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+  @include hover() {
+    strong {
+      color: #000;
+    }
+  }
+  strong {
+    transition: all 0.2s ease;
+    color: #363636;
+  }
+}
 // Our feedback section
 .our-feedback {
   background-image: url(../img/bg-feedback.jpg);
