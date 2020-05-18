@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  //= layout/_head.html
+<body>
+  <div class="wrapper">
+    <main class="main-page">
+      //= layout/_header.html
+      //= layout/_widget-message.html
+
+      <div class="inner-pages bg-one">
+        <section class="catalog-page">
+          <div class="container">
+            <div class="head-page head-page--horizont">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__items">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__items">
+                    <a href="#" class="breadcrumbs__link">World of Warcraft</a>
+                  </li>
+                  <li class="breadcrumbs__items">
+                    <span class="breadcrumbs__current">World of Warcraft (FREE)</span>
+                  </li>
+                </ul>
+              </div>
+              <h2 class="headline head-page__headline">World of Warcraft (FREE)</h2>
+
+              <div class="select-grp">
+                <p>Сортировка:</p>
+                <select class="select-sort">
+                  <option data-display="Популярные">Популярные</option>
+                  <option value="1">По убыванию цены</option>
+                  <option value="2">По возрастанию цены</option>
+                  <option value="3" disabled>Новые</option>
+                  <option value="4">Актуальные</option>
+                </select>
+              </div>
+            </div>
+            <!-- /.head-page -->
+            
+              <ul class="pop-games-list">
+                <li class="pop-games-items pop-games-items--free">
+                  <a href="./service-page-03.html" class="pop-games-link pop-games-link--free">
+                    <picture>
+                      <source type="image/webp" srcset="./img/wow-01.webp" width="181" height="100">
+                      <img src="./img/wow-01.png" alt="pic" width="181" height="100">
+                    </picture>
+                    <div class="pop-games-descr pop-games-descr--free">
+                      <strong>Wowcircle</strong>
+                    </div>
+                  </a>
+                </li>
+                <li class="pop-games-items pop-games-items--free">
+                  <a href="./service-page-03.html" class="pop-games-link pop-games-link--free">
+                    <picture>
+                      <source type="image/webp" srcset="./img/wow-02.webp" width="182" height="100">
+                      <img src="./img/wow-02.png" alt="pic" width="182" height="100">
+                    </picture>
+                    <div class="pop-games-descr pop-games-descr--free">
+                      <strong>Sirus</strong>
+                    </div>
+                  </a>
+                </li>
+                <li class="pop-games-items pop-games-items--free">
+                  <a href="./service-page-03.html" class="pop-games-link pop-games-link--free">
+                    <picture>
+                      <source type="image/webp" srcset="./img/wow-03.webp" width="159" height="100">
+                      <img src="./img/wow-03.png" alt="pic" width="159" height="100">
+                    </picture>
+                    <div class="pop-games-descr pop-games-descr--free">
+                      <strong>Pandawow</strong>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+          </div> 
+        </section>
+        <!-- /.catalog-page -->
+      </div>
+      
+    </main>
+    //= layout/_footer.html
+  </div>
+  
+  <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/slick.min.js"></script>
+  <script src="js/libs/jquery.mask.min.js"></script>
+  <script src="js/libs/jquery.nice-select.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
