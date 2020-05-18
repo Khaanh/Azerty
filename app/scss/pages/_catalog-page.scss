@@ -27,6 +27,9 @@
     width: 100%;
     .option {
       background-color: #202020;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
     .option.selected.focus {
       background-color: #202020;
