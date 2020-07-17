@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<meta name="format-detection" content="telephone=no">
+  	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no">
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  	<title>Azerty</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  	<link rel="stylesheet" href="css/main.min.css">
+  	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">	
+  	<link rel="apple-touch-icon" href="favicon.ico">
+  </head>
+<body>
+  <div class="wrapper">
+    <main class="main-page">
+      <header class="header">
+        <div class="container header__container">
+      
+          <a href="#" class="logo">
+            <picture>
+              <source type="image/webp" srcset="./img/logo.webp, ./img/logo@2x.webp 2x">
+              <img src="./img/logo.png" srcset="./img/logo@2x.png 2x" alt="pic">
+            </picture>
+          </a>
+          <!-- /.logo -->
+      
+          <nav class="nav">
+            <ul>
+              <li><a href="./">Главная</a></li>
+              <li><a href="./catalog-page.html">Каталог игр</a></li>
+              <li><a href="./faq-page.html">F.A.Q</a></li>
+              <li><a href="./warranty-page.html">Гарантии</a></li>
+              <li><a href="./provider-page.html">Поставщикам</a></li>
+              <li><a href="./contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <!-- /.nav -->
+      
+          <div class="header-widget">
+            <form action="#" class="form header-widget__form">
+              <div class="form-row form-row--search">
+                <input type="text" class="form-control form-control--search" placeholder="Введите названия игры">
+              </div>
+              <button class="form-search"></button>
+            </form>
+            <a href="#" class="profile"></a>
+          </div>
+          <!-- /.header-widget -->
+        </div>
+      </header>
+      <a href="#" class="widget-messeage">
+        <i class="widget-messeage__icon"></i>
+        <div class="widget-messeage__holder">
+          Оставьте нам сообщение
+        </div>
+      </a>
+
+      <div class="inner-pages inner-pages--pb personal-bg">
+        <section class="personal-page">
+          <div class="container">
+            <div class="head-page head-page--horizont">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__items">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__items">
+                    <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+                  </li>
+                  <li class="breadcrumbs__items">
+                    <span class="breadcrumbs__current">Мой профиль</span>
+                  </li>
+                </ul>
+              </div>
+              <h2 class="headline">Личный кабинет</h2>
+            </div>
+            <!-- /.head-page -->
+          </div>
+
+          <div class="personal-main">
+            <div class="tabs-section">
+              <div class="tabs">
+                <a href="a1" class="tabslink js-tabsLink">
+                  <i class="tabs-icon icon-my-profile"></i>
+                  <p>Мой профиль</p>
+                </a>
+                <a href="a2" class="tabslink js-tabsLink">
+                  <i class="tabs-icon icon-history"></i>
+                  <p>История заказов</p>
+                </a>
+                <a href="a3" class="tabslink js-tabsLink">
+                  <i class="tabs-icon icon-partners"></i>
+                  <p>Партнерская программа</p>
+                </a>
+                <a href="a4" class="tabslink js-tabsLink">
+                  <i class="tabs-icon icon-status"></i>
+                  <p>Мой статус</p>
+                </a>
+                <a href="a5" class="tabslink js-tabsLink is-active">
+                  <i class="tabs-icon icon-instruction"></i>
+                  <p>Инструкция по оплате</p>
+                </a>
+              </div>
+              <!-- /.tabs -->
+              <div class="personal-inner">
+                <div class="holder-content">
+                  <div class="tabcontent" id="a1">
+                    <form action="#" class="form-profile">
+                      <fieldset class="form-profile__fieldset">
+                        <legend class="subject subject--left">Информация о пользователе</legend>
+                        <strong class="email-user">Электронная почта: <a href="#">user@gmail.com</a></strong>
+                        <div class="form-profile__holder">
+                          <div class="form-profile__layout">
+                            <div class="form-profile__col">
+                              <label class="form-profile__lb">
+                                <strong>Телефон:</strong>
+                                <div class="form-profile__row">
+                                  <input type="tel" class="form-control form-profile__control js-validateTel">
+                                </div>
+                              </label>
+                              <label class="form-profile__lb">
+                                <strong>Skype:</strong>
+                                <div class="form-profile__row">
+                                  <input type="text" class="form-control form-profile__control">
+                                </div>
+                              </label>
+                              <label class="form-profile__lb">
+                                <strong>ICQ:</strong>
+                                <div class="form-profile__row">
+                                  <input type="text" class="form-control form-profile__control">
+                                </div>
+                              </label>
+                            </div>
+                            <div class="form-profile__col">
+                              <label class="form-profile__lb">
+                                <strong>Новый пароль:</strong>
+                                <div class="form-profile__row">
+                                  <input type="password" autocomplete="on" class="form-control form-profile__control">
+                                </div>
+                                <small>Пароль должен содержать не менее 5 и не более 20 символов</small>
+                              </label>
+                              <label class="form-profile__lb">
+                                <strong>Повторите новый пароль:</strong>
+                                <div class="form-profile__row">
+                                  <input type="password" autocomplete="on" class="form-control form-profile__control">
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                          <button type="button" class="btn form-profile__btn">Сохранить изменения</button>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <!-- // -->
+                  <div class="tabcontent" id="a2">
+                    <div class="subject subject--left">История заказов</div>
+
+                    <div class="history-table">
+                      <strong>Ваши заказы:</strong>
+                      <div class="history-table__layout">
+                        <div class="history-table__col history-table__col--left history-table__col--lg">
+                          <p>Номер заказа: 00001</p>
+                          <strong>5000 монет World of Warcraft</strong>
+                        </div>
+                        <div class="history-table__col">
+                          <p>Статус</p>
+                          <strong class="status">Получено</strong>
+                        </div>
+                        <div class="history-table__col">
+                          <p>Email</p>
+                          <a href="#">User@gmail.com</a>
+                        </div>
+                        <div class="history-table__col">
+                          <p>24.04.2020</p>
+                          <strong>300 Руб.</strong>
+                        </div>
+                        <div class="history-table__col history-table__col--right">
+                          <a href="#" class="details-link">Детали заказа</a>
+                        </div>  
+                      </div>
+                      <div class="history-table__layout history-table__layout--column">
+                        <div class="history-table__row">
+                          <div class="history-table__col history-table__col--left history-table__col--lg">
+                            <p>Номер заказа: 00002</p>
+                            <strong>100 000 Кинар Aion</strong>
+                          </div>
+                          <div class="history-table__col">
+                            <p>Статус</p>
+                            <strong class="status">Получено</strong>
+                          </div>
+                          <div class="history-table__col">
+                            <p>Email</p>
+                            <a href="#">User@gmail.com</a>
+                          </div>
+                          <div class="history-table__col">
+                            <p>24.04.2020</p>
+                            <strong>7000 Руб.</strong>
+                          </div>
+                          <div class="history-table__col history-table__col--right">
+                            <a href="#" class="details-link">Детали заказа</a>
+                          </div>  
+                        </div>
+                        <div class="history-table__wrap">
+                          <div class="history-table__inner">
+                            <p>World of Warcraft (FREE) : Купить золото на Wowcircle</p>
+                            <p>Сервер : х1(pve)(Logon 3) (3.3.5а);</p>
+                            <p>Укажите_сторону : Орда;</p>
+                            <p>Укажите_имя_персонажа : аывыва;</p>
+                            <p>Платежная система : WebMoney WMR;</p>
+                            <p>Игровая валюта : 23122;</p>
+                            <p>Стоимость : 254.34;</p>
+                          </div>
+                          <div class="history-table__inner">
+                            <p>Способ_доставки : На усмотрение оператора;</p>
+                            <p>email : user@gmail.com;</p>
+                            <p>Укажите_ICQ_или_Skype: : 2341241;</p>
+                            <p>Оставьте_комментарий_о_предпочитаемом_времени_доставки : 15:30;</p>
+                            <p>promo_code : ;</p>
+                            <p>Заказ № : 206964;</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="tabcontent" id="a3">
+                    <div class="subject subject--left subject--mb">Партнерская программа</div>
+                    <div class="programs-section">
+                      <div class="programs-tabs"> 
+                        <a href="p1" class="programs-link js-programsLink">
+                          <p>Условия</p>
+                        </a>
+                        <a href="p2" class="programs-link js-programsLink">
+                          <p>Начисления</p>
+                        </a>
+                        <a href="p3" class="programs-link js-programsLink is-active">
+                          <p>Материалы для партнера</p>
+                        </a>
+                      </div>
+                      <div class="programs-holder">
+                        <div class="programs-content" id="p1">
+                          <div class="content-generic">
+                            <p>ОФЕРТА</p>
+                            <ol>
+                              <li>Предмет соглашения
+                                <ol>
+                                  <li>Любой пользователь, который зарегистрировался в интернет магазине Azerty-Money.ru, имеет право стать участником партнерской программы.</li>
+                                  <li> Партнеру выдается процент от суммы всех заказов, которые были сделаны именно по его ссылке.</li>
+                                  <li>На данный момент времени эта программа работает только с игровыми ценностями и игровой валютой</li>
+                                  <li>Начисление отчислений производиться лишь на уже выполненные заказы.</li>
+                                  <li>Партнер не получает вознаграждений за свои заказы.</li>
+                                  <li>В случае, когда комиссионные расходы берет на себя магазин, вознаграждение партнера рассчитывается следующем образом: процент берется со стоимости заказа за минусом комиссий, взятых платежной системой.</li>
+                                </ol>
+                              </li>
+                              <li>Партнерская программа: описание и основы ее работы
+                                <ol>
+                                  <li>Каждый Партнер может увидеть свою Реферальную ссылку в специальном разделе, называемым «Материалы для Партнеров». Реферальная ссылка представляет собой стандартную ссылку, ведущую на определенную страницу портала, которая содержит в себе уникальный код Партнера.
+                                    <br>
+                                    К примеру:
+                                    <br>
+                                    a).Так выглядит стандартная ссылка на основную страницу сайта: <a href="#">http://azerty-money.ru</a>, а это уже Реферальная ссылка: <a href="#">http://azerty-money.ru/?ref=94</a>
+                                    <br>
+                                    b).Так выглядит стандартная ссылка на страницу, где можно приобрести игровую валюту для игры World of Warcraft: <a href="#">http://azerty-money.ru/wow_gold</a>, а это уже Реферальная ссылка: <a href="#">http://azerty-money.ru/wow_gold?ref=94 </a>
+                                  </li>
+                                  <li>Пользователь закрепляется за партнером после перехода по предоставленной им реферальной ссылке, но лишь в том случае, если он осуществил заказ (оформлен и оплачен). Партнер в свою очередь получает свое вознаграждение. За все следующие приобретения данного пользователя партнер также будет получать процент с продаж.</li>
+                                  <li>Пользователь, закрепленный за партнером, идентифицируется благодаря технологии cookie. Во время перехода по реферальной ссылке в cookie пользователя записываются все сведения о партнере, чтобы после завершения заказа партнер смог получить свое вознаграждение.</li>
+                                  <li>Как только был совершен первый заказ, пользователь привязывается к партнеру уже по e-mail покупателя. В результате во время повторных покупок система проверяет первым делом электронную почту приобретателя, чтобы узнать, привязана ли она к какому-либо партнеру. В случае привязки партнер снова получит вознаграждение за покупку привязанного к нему пользователя. Исключения указаны ниже.</li>
+                                  <li>Пользователь «открепляется» от партнеров в ряде случаев:
+                                    <ol>
+                                      <li> Если по какой-либо причине пользователь не стал совершать заказ после осуществления перехода по Вашей реферальной ссылке, а затем попал на сайт по реферальной ссылке другого партнера и оплатил покупку игровой валюты или игровых ценностей, то он будет «закреплен» за последним партнером.</li>
+                                    </ol>
+                                  </li>
+                                </ol>
+                              </li>
+                              <li>Правила применения материалов для партнерской ссылки
+                                <ol>
+                                  <li>В графических или текстовых материалах, где имеется реферальная ссылка, нужно в обязательно порядке указывать, куда именно попадет пользовать, если кликнет по ней, а также для чего она нужна. Нет необходимости упоминать наименование площадки, однако содержание графического материала и текста должны соответствовать странице, куда ведет ссылка.</li>
+                                  <li>При прямом или косвенном нарушении содержанием реферальной ссылки авторских прав, Azerty Money может потребовать заменить содержание.</li>
+                                  <li>Реферальные ссылки запрещается размещать на следующих интернет-порталах: если они призывают к экстремизму или насилию, носят порнографический характер, пропагандируют наркотические препараты.</li>
+                                </ol>
+                              </li>
+                              <li>Размеры начислений партнерам
+                                <ol>
+                                  <li>Стандартная ставка начислений партнерам равна 5% от стоимости совершенного пользователем заказа.</li>
+                                  <li>В особых случаях регулярная ставка начислений для партнера может быть установлена в индивидуальном порядке.</li>
+                                </ol>
+                              </li>
+                              <li>Проведение выплат
+                                <ol>
+                                  <li>Осуществляются выплаты по запросам партнера. Запрос можно сделать в разделе «Начисления». Размер запроса должен составлять не менее 50 рублей.</li>
+                                  <li>Осуществляются выплаты электронными деньгами с помощью следующих сервисов: Qiwi, Webmoney и Яндекс Деньги.</li>
+                                  <li>Чтобы обезопасить процесс перевода денежных средств, партнер не может самостоятельно сменить номер счета или платежную систему после проведения первого вывода денег. Изменить реквизиты можно будет только путем обращения к Администратору и объяснения ему сложившейся ситуации.</li>
+                                </ol>
+                              </li>
+                              <li>Особые случаи
+                                <ol>
+                                  <li>Cookie браузера могут быть удалены пользователям. Он может решить использовать браузер, на котором не переходил по реферальной ссылке. Пользователь может указать не свой e-mail. Если системе не удастся идентифицировать пользователя по электронной почте или cookie, то партнер не получит своего вознаграждения. Если Вам, как партнеру, кажется, что по тому или иному заказу должно было быть выплачено партнерское вознаграждение, то следует обратиться в службу поддержки по контактам, указанным на портале, и изложить суть своей проблемы. Если покупателя будет невозможность идентифицировать, то Azerty Money не дает никаких гарантий на то, что Ваша претензия будет рассмотрена, а также может не сообщить сроков ее рассмотрения. При соглашении с этими правилами Вы принимаете тот факт, что партнерская программа является полностью автоматизированной системой, а потому Вам никто не может дать гарантию, что будут выполняться ручные операции.</li>
+                                  <li>Нельзя проводить искусственное создание покупок на новые электронные почты, чтобы получить повышенное партнерское вознаграждение.</li>
+                                  <li>Нельзя заниматься созданием двух и более партнерских аккаунтов одному и тому же лицу.</li>
+                                </ol>
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                        <div class="programs-content" id="p2">
+                          <div class="accrual-system">
+                            <div class="accrual-system__layout">
+                              <div class="accrual-system__row">
+                                <div class="accrual-system__col">Ваш доход:</div>
+                                <div class="accrual-system__col">
+                                  <p class="txt-top"><strong>5%</strong> — игровая валюта</p>
+                                  <p>Процент от суммы каждого заказа, сделанного по вашей ссылке</p>
+                                </div>
+                              </div>
+                              <div class="accrual-system__row">
+                                <div class="accrual-system__col">Текущий баланс:</div>
+                                <div class="accrual-system__col"><strong>1000 ₽</strong></div>
+                              </div>
+                            </div>
+                            <button class="btn accrual-system__btn">Вывести деньги</button>
+                          </div>
+                        </div>
+                        <div class="programs-content is-display" id="p3">
+                          <form class="form-referral">
+                            <strong>Ваша реферальная ссылка:</strong>
+                            <div class="form-referral__row">
+                              <input type="url" class="form-control" value="http://azerty-money.ru/?ref=31822">
+                            </div>
+                            <p>Заказы, оформленные при переходе по этой ссылке, приносят вам доход!</p>
+                          </form>
+                          <a href="#" class="referal-pic">
+                            <picture>
+                              <source type="image/webp" srcset="./img/referal-pic.webp" width="512" height="280">
+                              <img src="./img/referal-pic.jpg" alt="pic" width="512" height="280">
+                            </picture>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="tabcontent" id="a4">
+                    <div class="subject subject--left subject--mb">Мой статус</div>
+                    <div class="my-status">
+                      <div class="my-status__row">
+                        <p>Ваш статус</p>
+                        <p>Ваша скидка</p>
+                      </div>
+                      <i class="my-status__icon">
+                        <picture>
+                          <source type="image/webp" srcset="./img/status-icon.webp" width="50" height="50">
+                          <img src="./img/status-icon.png" alt="pic" width="50" height="50">
+                        </picture>
+                      </i>
+                      <div class="my-status__row">
+                        <strong>Новичок</strong>
+                        <strong>10%</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // -->
+                  <div class="tabcontent is-display" id="a5">
+                    <div class="subject subject--left subject--mb">Инструкция по оплате</div>
+                    <div class="content-generic">
+                      <p>Для получения заказа необходимо выполнить всего 3 шага:</p>
+                      <p>Заполнить форму и нажать "Купить".</p>
+                      <p>Проверить введеные данные и подтвердить покупку нажав на "Купить"</p>
+                      <p>Принять заказ в игре.</p>
+                      <p>Наш сайт Azerty-money.ru предоставляет большой выбор популярных способов оплаты для клиентов всех стран СНГ.</p>
+                      <p>Для иностранных клиентов есть удобный способ оплаты картой Visa/MasterCard (для этого требуется только</p>
+                      <p>наличие пластиковой карты и платеж займет менее двух минут).</p>
+                      <p>Вы можете оплатить заказ с помощью WebMoney:</p>
+                      <p>1) Создайте заказ, выбрав способ оплаты "WebMoney(WMR)" (WMZ, WMU, WME, WMB).</p>
+                      <p>2) Вы будете перенаправлены на сервис WebMoney.</p>
+                      <p>3) Далее вам нужно будет ввести ваш мобильный номер и пароль. Либо авторизоваться другим способом.</p>
+                      <p>4) Оплата будет проходить автоматически под системой Webmoney Merchant.</p>
+                      <p>5) Комиссия платежной системы 0.8%</p>
+                      <p>Вы можете оплатить заказ с помощью Qiwi:</p>
+                      <p>1) Создайте заказ, выбрав способ оплаты "QIWI".</p>
+                      <p>2) Вы будете перенаправлены на сервис Qiwi.</p>
+                      <p>3) Далее вам нужно будет ввести ваш мобильный номер и пароль.</p>
+                      <p>4) В личном кабинете уже будет выставлен счет для оплаты вашего заказа.</p>
+                      <p>5) Комиссия платежной системы 0%</p>
+                      <p>Мы принимаем оплату со всех номеров мира в которых действует платежная система Qiwi!</p>
+                      <p>Вы можете оплатить заказ с помощью Яндекс.Деньги:</p>
+                      <p>1) Создайте заказ, выбрав способ оплаты "Yandex".</p>
+                      <p>2) Вы будете перенаправлены на сервис Яндекс.Деньги.</p>
+                      <p>3) Далее вам нужно будет подтвердить оплату с помощью платежного пароля или мобильного телефона.</p>
+                      <p>4) Комиссия платежной системы 0%</p>                      
+                      <p>Вы можете оплатить заказ с помощью Visa или MasterCard:</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.holder-content -->
+                <div class="attention attention--bold">
+                  <i class="attention__icon">!</i>
+                  <p>Внимание! Мы выполняем заказы с 11:00 до 23:00 (Москва, GMT+3, UTC+3)</p>
+                </div>
+
+              </div>
+            </div>
+            <!-- /.tabs-section -->
+          </div>
+        </section>
+        <!-- /.personal-page -->
+      </div>
+      
+    </main>
+    <footer class="footer">
+      <i class="footer-pic">
+        <img src="./img/dragon-pic.png" alt="icon" width="625" height="700">
+      </i>
+      <div class="container">
+    
+        <div class="footer-holder">
+          <a href="#" class="footer-logo">
+            <picture>
+              <source type="image/webp" srcset="./img/logo-footer.webp, ./img/logo-footer@2x.webp 2x" width="253" height="152">
+              <img src="./img/logo-footer.png" srcset="./img/logo-footer@2x.png 2x" alt="pic" width="253" height="152">
+            </picture>
+          </a>
+          <!-- /.footer-logo -->
+          
+          <div class="footer-main">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог игр</a></li>
+                <li><a href="#">F.A.Q</a></li>
+                <li><a href="#">Гарантии</a></li>
+                <li><a href="#">Поставщикам</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Мой аккаунт</a></li>
+              </ul>
+            </nav>
+    
+            <div class="summary">
+              <i class="summ-icon">?</i>
+              <div class="summ-desc">
+                <strong>Сумма заказов, руб. </strong>
+                <strong>Скидка</strong>
+              </div>
+              <div class="summ-table">
+                <div class="summ-row">
+                  <p>100 - 500</p>
+                  <strong>1%</strong>
+                </div>
+                <div class="summ-row">
+                  <p>500 - 2000</p>
+                  <strong>2%</strong>
+                </div>
+                <div class="summ-row">
+                  <p>2000 - 5000</p>
+                  <strong>3%</strong>
+                </div>
+                <div class="summ-row">
+                  <p>5000 - 10000</p>
+                  <strong>4%</strong>
+                </div>
+                <div class="summ-row">
+                  <p>10000 - 30000</p>
+                  <strong>5%</strong>
+                </div>
+                <div class="summ-row">
+                  <p>VIP статус > 30000 </p>
+                  <strong>10%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.footer-main -->
+    
+          <div class="contact-us">
+            <a href="#" class="btn btn-transp contact-us__btn">Связатся с нами</a>
+            <div class="working-hours">
+              <i class="working-hours__icon"></i>
+              <p>с 11:00 до 23:00</p>
+            </div>
+          </div>
+          <!-- /.contact-us -->
+        </div>
+    
+        <div class="copyright">2020 © Все права защищены</div>
+    
+      </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Developer -->
+    <div class="develop">
+      <a href="https://t.me/kh2nh">Develop by: Khánh Nguyễn</a>
+    </div>
+    <!-- ========================== -->
+    <div class="html-wrap">
+      <div class="toggle-menu js-close-menu">
+        <span>Close list</span>
+      </div>
+      <ul class="html-list">
+        <li class="html-items">
+          <span>1.</span>
+          <a href="./index.html" class="html-link">index.html</a>
+        </li>
+        <li class="html-items">
+          <span>2.</span>
+          <a href="./faq-page.html" class="html-link">faq-page.html</a>
+        </li>
+        <li class="html-items">
+          <span>3.</span>
+          <a href="./warranty-page.html" class="html-link">warranty-page.html</a>
+        </li>
+        <li class="html-items">
+          <span>4.</span>
+          <a href="./provider-page.html" class="html-link">provider-page.html</a>
+        </li>
+        <li class="html-items">
+          <span>5.</span>
+          <a href="./contacts.html" class="html-link">contacts.html</a>
+        </li>
+        <li class="html-items">
+          <span>6.</span>
+          <a href="./404-page.html" class="html-link">404-page.html</a>
+        </li>
+        <li class="html-items">
+          <span>7.</span>
+          <a href="./registration-page.html" class="html-link">registration-page.html</a>
+        </li>
+        <li class="html-items">
+          <span>8.</span>
+          <a href="./personal-page.html" class="html-link">personal-page.html</a>
+        </li>
+        <li class="html-items">
+          <span>9.</span>
+          <a href="./catalog-page.html" class="html-link">catalog-page.html</a>
+        </li>
+        <li class="html-items">
+          <span>10.</span>
+          <a href="./service-page-01.html" class="html-link">service-page-01.html</a>
+        </li>
+        <li class="html-items">
+          <span>11.</span>
+          <a href="./service-page-02.html" class="html-link">service-page-02.html</a>
+        </li>
+        <li class="html-items">
+          <span>12.</span>
+          <a href="./service-page-03.html" class="html-link">service-page-03.html</a>
+        </li>
+    
+        </ul>
+    </div>
+    
+    
+    <style>
+      .html-wrap {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: 2px solid #000;
+        background: #fff;
+        z-index: 999;
+      }
+      .html-list {
+        padding: 12px 8px;
+        height: 200px;
+        overflow: auto;
+        width: auto;
+        display: block;
+        height: 160px;
+      }
+      .inactive {
+        display: none;
+      }
+      .html-items {
+        margin: 4px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .html-items span {
+        display: inline-block;
+        margin-right: 6px;
+        min-width: 21px;
+        color: #000;
+      }
+      .html-link {
+        color: #000;
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .html-link:hover {
+        text-decoration: none;
+      }
+      .toggle-menu {
+        color: #000;
+        display: block;
+        border-bottom: 1px solid #000;
+        cursor: pointer;
+        padding: 0;
+        text-align: right;
+      }
+      .toggle-menu span {
+        text-align: center;
+        display: block;
+        background: #000;
+        color: #fff;
+        padding: 0 6px;
+      }
+    </style>
+    <!-- ========================== -->
+  </div>
+  
+  <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/slick.min.js"></script>
+  <script src="js/libs/jquery.mask.min.js"></script>
+  <script src="js/libs/jquery.nice-select.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
